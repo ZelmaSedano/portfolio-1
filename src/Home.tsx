@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './App.css';
 
+import cat from './assets/cat.png';
+
 // hi justine, feel free to look at the comments in the modal section to learn more about how to render modals.  the component is in DesktopIcon.tsx :)
 
 // component imports
@@ -139,7 +141,7 @@ function Home() {
             <div className="desktop">
                 {/* when you click the desktop icon, setShowModal is set to true */}
                 <DesktopIcon
-                    icon="./assets/cat.png"
+                    icon={cat}
                     label="meowdy"
                     x={50}
                     y={35}
