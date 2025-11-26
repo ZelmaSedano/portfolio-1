@@ -139,7 +139,7 @@ function Home() {
             <div className="desktop">
                 {/* when you click the desktop icon, setShowModal is set to true */}
                 <DesktopIcon
-                    icon="/src/assets/cat.png"
+                    icon="./assets/cat.png"
                     label="meowdy"
                     x={50}
                     y={35}
