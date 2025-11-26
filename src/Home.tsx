@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import './App.css';
 
 import cat from './assets/cat.png';
+import scream from './assets/scream.png';
 
 // hi justine, feel free to look at the comments in the modal section to learn more about how to render modals.  the component is in DesktopIcon.tsx :)
 
@@ -221,7 +222,7 @@ function Home() {
             {/* scream icon */}
             <div className="desktop">
                 <DesktopIcon
-                    icon="/src/assets/scream.png"
+                    icon={scream}
                     label="RING RING"
                     x={50}
                     y={145}
