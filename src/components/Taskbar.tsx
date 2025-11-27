@@ -1,5 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 
+// img imports
+import flag from '../assets/flag.png'
+import connections from '../assets/connections.ico'
+
 interface TaskbarProps {
     isVisible: boolean;
     toggleWindow: () => void;
@@ -46,7 +50,7 @@ const Taskbar: React.FC<TaskbarProps> = ({isVisible, toggleWindow, currentTime})
                 className={`start-button ${isStartMenuOpen ? 'active' : ''}`}
                 onClick={toggleStartMenu}
             >
-                <img src="/src/assets/flag.png" className="start-icon" alt="start"/>
+                <img src={flag} className="start-icon" alt="start"/>
                 <span className="start-text">Start</span>
             </button>
 
@@ -70,7 +74,7 @@ const Taskbar: React.FC<TaskbarProps> = ({isVisible, toggleWindow, currentTime})
                 className={`devscape-button ${isVisible ? 'window-visible' : ''}`}
                 onClick={toggleWindow}
                 >
-                <img src="/src/assets/connections.ico" className='connections-icon' alt="icon"/>
+                <img src={connections} className='connections-icon' alt="icon"/>
                 <span className="devscape-text">DevScape</span>
                 </button>
             </div>

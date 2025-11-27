@@ -12,6 +12,17 @@ import clippy from './assets/mad_clippy.png'
 
 // navbar img imports
 import connections from './assets/connections.ico'
+import Starfield from './assets/Starfield.ico'
+import Painting from './assets/Painting.ico'
+import resume from './assets/resume.png'
+import send from './assets/send.png'
+
+// content img imports
+import computer_1 from './assets/computer_1.png'
+import computer_2 from './assets/computer-2.png'
+
+// footer img imports
+import earth from './assets/earth.ico'
 
 
 // hi justine, feel free to look at the comments in the modal section to learn more about how to render modals.  the component is in DesktopIcon.tsx :)
@@ -369,19 +380,19 @@ function Home() {
                                 {/* allows you to style the Home button when it's the router path */}
                                 <li className={`button left-button ${location.pathname === '/' ? 'active-home' : ''}`}>
                                     <Link to="/">
-                                        <img src="/src/assets/Starfield.ico" className='home-icon' alt='home'/>
+                                        <img src={Starfield} className='home-icon' alt='home'/>
                                         <p>Home</p>
                                     </Link>
                                 </li>
                                 <li className='button'>
                                     <Link to="/portfolio">
-                                        <img src="/src/assets/painting.ico" className='paint-icon' alt='portfolio'/>
+                                        <img src={Painting} className='paint-icon' alt='portfolio'/>
                                         <p>Portfolio</p>
                                     </Link>
                                 </li>
                                 <li className='button'>
                                     <Link to="/resume">
-                                        <img src="/src/assets/resume.png" className='resume-icon' alt='resume'></img>
+                                        <img src={resume} className='resume-icon' alt='resume'></img>
                                         <p>Resume</p>
                                     </Link>
                                 </li>
@@ -393,7 +404,7 @@ function Home() {
                                 </li> */}
                                 <li className='button'>
                                     <Link to="/contact">
-                                        <img src="/src/assets/send.png" className='contact-icon' alt='contact'></img>
+                                        <img src={send} className='contact-icon' alt='contact'></img>
                                         <p>Contact</p>
                                     </Link>
                                 </li>   
@@ -419,12 +430,12 @@ function Home() {
                     {/* window content */}
                     <div className='content'>
                         <div className='homepage-banners'>
-                            <img className='computer' src="/src/assets/computer-2.png" alt="evil_cat" />
+                            <img className='computer' src={computer_1} alt="evil_cat" />
                             <div className='inner-banner-text'>
                                 <p className='banner'>Valentia's Portolio</p>
                                 <p className='banner-1'>Nostalgia Design Expert</p>
                             </div>
-                            <img className='computer' src="/src/assets/computer-2.png" alt="evil_cat" />
+                            <img className='computer' src={computer_2} alt="evil_cat" />
                         </div>
 
                         <div className='bio-section'>
@@ -444,7 +455,7 @@ function Home() {
                             <div className = 'footer-section footer-small'></div>
                             <div className = 'footer-section footer-small'></div>
                             <div className='footer-section footer-medium'>
-                                <img src="/src/assets/earth.ico" className='content-footer-icon' alt='content_footer'></img>
+                                <img src={earth} className='content-footer-icon' alt='content_footer'></img>
                                 <p className='footer-section-text'>Internet</p>
                             </div>
                         </div>
