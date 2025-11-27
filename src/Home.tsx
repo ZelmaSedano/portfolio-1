@@ -2,8 +2,17 @@ import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './App.css';
 
+// icon img imports
 import cat from './assets/cat.png';
 import scream from './assets/scream.png';
+import wassup from './assets/wassup.gif'
+import evil_cat from './assets/evil_cat.gif'
+import clippy from './assets/mad_clippy.png'
+
+
+// navbar img imports
+import connections from './assets/connections.ico'
+
 
 // hi justine, feel free to look at the comments in the modal section to learn more about how to render modals.  the component is in DesktopIcon.tsx :)
 
@@ -196,7 +205,7 @@ function Home() {
                             </div>
                             <div className="modal-body">
                                 <div className="image-container">
-                                    <img src="/src/assets/evil_cat.gif" alt="evil_cat" />
+                                    <img src={evil_cat} alt="evil_cat" />
                                 </div>
                             </div>
                         </div>
@@ -212,7 +221,7 @@ function Home() {
                             </div>
                             <div className="modal-body">
                                 <div className="image-container">
-                                    <img src="/src/assets/evil_cat.gif" alt="evil_cat" />
+                                    <img src={evil_cat} alt="evil_cat" />
                                 </div>
                             </div>
                         </div>
@@ -239,7 +248,7 @@ function Home() {
                         </div>
 
                         <div className="modal-body">
-                            <img src='/src/assets/wassup.gif' className='wassupp' alt='wassup_gif'></img>
+                            <img src={wassup} className='wassupp' alt='wassup_gif'></img>
                         </div>
                         </div>
                     </div>
@@ -250,7 +259,7 @@ function Home() {
             <div className="desktop">
                 {/* when you click the desktop icon, setShowModal is set to true */}
                 <DesktopIcon
-                    icon="/src/assets/mad_clippy.png"
+                    icon={clippy}
                     label="click me"
                     x={clippyPosition.x}
                     y={clippyPosition.y}
@@ -304,7 +313,7 @@ function Home() {
                             </div>
                             <div className="modal-body">
                                 <div className="image-container">
-                                    <img src="/src/assets/evil_cat.gif" alt="evil_cat" />
+                                    <img src={evil_cat} alt="evil_cat" />
                                 </div>
                             </div>
                         </div>
@@ -320,7 +329,7 @@ function Home() {
                             </div>
                             <div className="modal-body">
                                 <div className="image-container">
-                                    <img src="/src/assets/evil_cat.gif" alt="evil_cat" />
+                                    <img src={evil_cat} alt="evil_cat" />
                                 </div>
                             </div>
                         </div>
@@ -345,7 +354,7 @@ function Home() {
                     {/* header */}
                     <header>
                         <section className='blue-bar'>
-                            <img src="/src/assets/connections.ico" className='icon' alt="icon"/>
+                            <img src={connections} className='icon' alt="icon"/>
                             <section className='blue-bar-text'>DevScape - Valentia Sedano</section>
 
                             <div className="button-container">
